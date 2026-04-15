@@ -573,7 +573,7 @@
     <!-- Navigation -->
     <nav>
       <div class="nav-logo">
-        <img src="./Images/google-icon.png" alt="Google Icon" onerror="this.style.display='none'" />
+
         LAKSHAY OZA
       </div>
       <ul class="nav-links">
@@ -606,7 +606,7 @@
           <div class="hero-buttons">
             <a href="https://medium.com/@lakshayoza126" target="_blank" class="btn">Read my blog articles</a>
             <!-- Ensure your PDF is saved as 'Lakshay_Oza_DevOps_Resume.pdf' in the same folder -->
-            <a href="./Lakshay_Oza_DevOps_Resume.pdf" download class="btn btn-solid">↓ Download Resume (PDF)</a>
+            <a href="./Images/Lakshay_Oza_DevOps_Resume_.pdf" download class="btn btn-solid">Download Resume ↓</a>
           </div>
         </div>
       </div>
@@ -644,11 +644,12 @@
         <!-- Project 1 -->
         <div class="project-card animate-element">
           <div class="project-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mkmBmk2wztc?si=4DU4pPXZnxbSk9Yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/mkmBmk2wztc?si=4DU4pPXZnxbSk9Yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            <img src="./Images/docker-troubleshoot.png" alt="docker troubleshoot" onerror="this.style.display='none'">
           </div>
           <div class="project-content">
             <h3>Linux CLI Debugging in Docker</h3>
-            <p>Debugged app issues in a Dockerized Linux setup using core CLI tools like <code>grep</code>, <code>vim</code>, and <code>chmod</code> to resolve production-level issues.</p>
+            <p>Debugged app issues in a Dockerized Linux setup using core CLI tools like <code>grep</code>, <code>vim</code>, and <code>chmod</code> to resolve production-level issues. Watch full video using the <a href="https://www.youtube.com/embed/mkmBmk2wztc?si=4DU4pPXZnxbSk9Yc" target="_blank">Youtube link</a>.</p>
             <div class="project-links">
                <a href="https://github.com/ozalakshay/linux-cli-debugging-docker" target="_blank" class="btn btn-small btn-outline">GitHub</a>
             </div>
@@ -755,6 +756,35 @@
                   <li>Explored how each microservice communicates over gRPC and discovered how service orchestration is handled.</li>
                   <li>Examined real-time metrics and logs through <code>kubectl logs</code> and GCP's Cloud Operations tools.</li>
                   <li>Analyzed service dependencies, crash recovery, and how Redis, gRPC, and JSON-based product catalogs are used in production.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-element">
+          <div class="project-video">
+              <img src="./Images/devsecops.png" alt="DevSecOps Pipeline" width="auto" onerror="this.src='https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=400'">
+          </div>
+          <div class="project-content">
+            <h3>End-to-End DevSecOps Pipeline</h3>
+            <p>Engineered a secure CI/CD pipeline integrating continuous security scanning (SAST/DAST) and container vulnerability checks to enforce compliance before production.</p>
+            <div class="project-links">
+               <a href="https://github.com/ozalakshay/devsecops" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </div>
+          <div class="project-description">
+            <button class="description-toggle" onclick="toggleDescription(this)"><span>Project Details</span> <span class="toggle-icon">▼</span></button>
+            <div class="description-content">
+              <div class="description-text">
+                <h4>Project Overview</h4>
+                <p>Implemented a "shift-left" security architecture by embedding automated vulnerability testing directly into a CI/CD workflow. This project demonstrates how to enforce strict security policies and compliance gates without sacrificing deployment velocity.</p>
+                <h4>Key Features</h4>
+                <ul>
+                  <li>Integrated <strong>SonarQube</strong> for Static Application Security Testing (SAST) to detect code smells and vulnerabilities early in the pipeline.</li>
+                  <li>Configured <strong>Trivy</strong> to automatically scan Docker container images and infrastructure configurations for known CVEs.</li>
+                  <li>Automated strict security gates within the CI/CD pipeline to block builds containing critical or high-severity risks.</li>
+                  <li>Secured deployment credentials and cloud secrets using robust secret management practices.</li>
                 </ul>
               </div>
             </div>
